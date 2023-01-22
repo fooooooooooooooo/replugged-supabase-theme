@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
 
 jobs:
   release:
@@ -33,5 +33,5 @@ jobs:
 
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "*.asar"
+          artifacts: '*.asar'
           makeLatest: true

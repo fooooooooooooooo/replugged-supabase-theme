@@ -1,16 +1,16 @@
 {
-  "id": "dev.replugged.ThemeTemplate",
-  "name": "Theme Template",
-  "description": "A theme template",
+  "id": "dev.fooooooooooooooo.supabase",
+  "name": "Supabase theme",
+  "description": "Replugged theme based on supabase",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
-    "github": "replugged-org"
+    "name": "fooooooooooooooo",
+    "discordID": "131283250042634241",
+    "github": "fooooooooooooooo"
   },
-  "version": "1.0.2",
+  "version": "1.0.0",
   "updater": {
     "type": "github",
-    "id": "replugged-org/theme-template"
+    "id": "fooooooooooooooo/replugged-supabase-theme"
   },
   "license": "MIT",
   "type": "replugged-theme",
