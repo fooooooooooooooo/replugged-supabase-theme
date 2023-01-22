@@ -2,7 +2,14 @@
 
 ## Installation
 
-_a_
+### **[Replugged](https://replugged.dev/)**
+
+1. Download the
+   [.asar file](https://github.com/fooooooooooooooo/replugged-supabase-theme/releases/latest/download/dev.fooooooooooooooo.supabase.asar).
+2. Save it to your replugged themes folder.
+   - **Windows** `%appdata%/replugged`
+   - **macOS** `~/Library/Application Support/replugged`
+   - **Other** `$XDG_CONFIG_HOME/replugged` or `~/.config/replugged`
 
 ## Screenshot
 
