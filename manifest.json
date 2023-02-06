@@ -7,7 +7,7 @@
     "discordID": "131283250042634241",
     "github": "fooooooooooooooo"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updater": {
     "type": "github",
     "id": "fooooooooooooooo/replugged-supabase-theme"
