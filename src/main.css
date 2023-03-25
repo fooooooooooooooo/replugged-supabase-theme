@@ -1,51 +1,62 @@
 .theme-dark {
-  --background-primary: #1c1c1c;
-  --background-secondary: #232323;
-  --background-secondary-alt: #232323;
-  --background-tertiary: #282828;
-  --background-accent: #3b3b3b;
-  --background-floating: #252525;
+  --colors-gray1: #161616;
+  --colors-gray2: #1c1c1c;
+  --colors-gray3: #232323;
+  --colors-gray4: #282828;
+  --colors-gray5: #2e2e2e;
+  --colors-gray6: #343434;
+  --colors-gray7: #3d3d3d;
+  --colors-gray8: #505050;
+  --colors-gray9: #707070;
+  --colors-gray10: #7e7e7e;
+  --colors-gray11: #a0a0a0;
+  --colors-gray12: #ededed;
 
-  --background-modifier-selected: #2e2e2e;
-  --background-modifier-hover: #343434;
+  --primary-600: var(--colors-gray1);
+  --primary-630: var(--colors-gray2);
+  --primary-660: var(--colors-gray3);
+  --primary-700: var(--colors-gray4);
+  --primary-800: var(--colors-gray6);
+  --primary-530: var(--colors-gray7);
+  --primary-500: var(--colors-gray7);
+  --primary-800: var(--colors-gray5);
 
-  --primary-dark-400: var(--background-modifier-hover);
-  --primary-dark-500: var(--background-accent);
-  --primary-dark-600: var(--background-accent);
-  --primary-dark-630: var(--background-secondary);
+  --background-modifier-selected: var(--colors-gray5);
+  --background-modifier-hover: var(--colors-gray4);
 
-  --deprecated-card-bg: var(--background-secondary);
+  --channel-text-area-placeholder: var(--dark-bg-text-color);
+  --channeltextarea-background: var(--input-background);
 
-  --dark-bg-bg-color: #7d7d7d;
-  --dark-bg-text-color: #8d8d8d;
-  --dark-bg-bg-color-hover: #a1a1aa;
+  --default-text-color: var(--interactive-normal);
+
+  --scrollbar-auto-thumb: var(--background-secondary);
+  --scrollbar-auto-track: transparent;
 
   --modal-background: var(--background-tertiary);
   --modal-footer-background: var(--background-accent);
   --button-secondary-background: var(--background-modifier-selected);
   --input-background: var(--background-secondary);
 
-  --channel-text-area-placeholder: var(--dark-bg-text-color);
-  --channeltextarea-background: var(--input-background);
+  /* custom colors */
 
-  --scrollbar-auto-thumb: var(--background-secondary);
-  --scrollbar-auto-track: transparent;
+  --dark-bg-bg-color: #7d7d7d;
+  --dark-bg-text-color: #8d8d8d;
+  --dark-bg-bg-color-hover: #a1a1aa;
 
   --green-thing: rgb(59, 165, 92);
-  --default-text-color: var(--interactive-normal);
 }
 
 /* patches for things that dont use variables for some unknown reason */
 
-.theme-dark .control-1fl03- > .container-2nx-BQ {
+.theme-dark .container-1QtPKm {
   background-color: var(--background-modifier-selected) !important;
 }
 
-.theme-dark .control-1fl03- > .container-2nx-BQ.disabled-3ipGAF {
+.theme-dark .container-1QtPKm.disabled-3_3z1m {
   background-color: var(--input-background) !important;
 }
 
-.theme-dark .control-1fl03- > .container-2nx-BQ.checked-25WXMf {
+.theme-dark .container-1QtPKm.checked-16gMAN {
   background-color: var(--green-thing) !important;
 }
 
@@ -68,4 +79,22 @@
 .autocomplete-3NRXG8 {
   --interactive-normal: var(--default-text-color);
   --interactive-active: var(--default-text-color);
+}
+
+/* quickcss fix */
+
+#replugged-quickcss-wrapper .cm-editor {
+  background-color: var(--background-secondary);
+}
+
+#replugged-quickcss-wrapper .cm-activeLine {
+  background-color: var(--background-modifier-hover);
+}
+
+#replugged-quickcss-wrapper .ͼ3 .cm-gutters {
+  background-color: var(--background-tertiary);
+}
+
+#replugged-quickcss-wrapper .cm-activeLineGutter {
+  background-color: var(--background-modifier-selected);
 }
