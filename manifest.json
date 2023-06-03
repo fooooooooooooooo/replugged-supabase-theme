@@ -1,5 +1,5 @@
 {
-  "id": "dev.fooooooooooooooo.supabase",
+  "id": "dev.fooooooooooooooo.supabase-theme",
   "name": "Supabase theme",
   "description": "Replugged theme based on supabase",
   "author": {
@@ -7,10 +7,10 @@
     "discordID": "131283250042634241",
     "github": "fooooooooooooooo"
   },
-  "version": "1.1.0",
+  "version": "2.0.0",
   "updater": {
-    "type": "github",
-    "id": "fooooooooooooooo/replugged-supabase-theme"
+    "type": "store",
+    "id": "dev.fooooooooooooooo.supabase-theme"
   },
   "license": "MIT",
   "type": "replugged-theme",
