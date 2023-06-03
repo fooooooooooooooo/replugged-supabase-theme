@@ -28,6 +28,7 @@
   --channeltextarea-background: var(--input-background);
 
   --default-text-color: var(--interactive-normal);
+  --text-muted: var(--colors-gray11);
 
   --scrollbar-auto-thumb: var(--background-secondary);
   --scrollbar-auto-track: transparent;
@@ -36,6 +37,9 @@
   --modal-footer-background: var(--background-accent);
   --button-secondary-background: var(--background-modifier-selected);
   --input-background: var(--background-secondary);
+
+  /* forum channels */
+  --home-background: var(--background-primary);
 
   /* custom colors */
 
@@ -66,35 +70,53 @@
 
 /* message bar colors */
 
-.channelTextArea-1FufC0 {
+.theme-dark .channelTextArea-1FufC0 {
   --interactive-normal: var(--dark-bg-bg-color);
   --interactive-hover: var(--dark-bg-bg-color-hover);
   --interactive-active: var(--dark-bg-bg-color-hover);
 }
 
-.emojiButtonNormal-35P0_i > div {
+.theme-dark .emojiButtonNormal-35P0_i > div {
   filter: brightness(0.6);
 }
 
-.autocomplete-3NRXG8 {
+.theme-dark .autocomplete-3NRXG8 {
   --interactive-normal: var(--default-text-color);
   --interactive-active: var(--default-text-color);
 }
 
-/* quickcss fix */
+/* Channels & Roles */
+.theme-dark .container-2IKOsH,
+.theme-dark .container-1um7CU,
+.theme-dark .header-3xB4vB,
+.theme-dark .scrollerContainer-y16Rs9,
+.theme-dark .emptyPage-2TGR7j {
+  background-color: var(--background-primary);
+}
 
-#replugged-quickcss-wrapper .cm-editor {
+.theme-dark .chat-2ZfjoI .profileCard-2gVmvm {
   background-color: var(--background-secondary);
 }
 
-#replugged-quickcss-wrapper .cm-activeLine {
+/* WHY is there a random :after element with a linear gradient ?? */
+.theme-dark .innerHeader-1cC3Fp:after {
+  background: transparent;
+}
+
+/* quickcss fix */
+
+.theme-dark #replugged-quickcss-wrapper .cm-editor {
+  background-color: var(--background-secondary);
+}
+
+.theme-dark #replugged-quickcss-wrapper .cm-activeLine {
   background-color: var(--background-modifier-hover);
 }
 
-#replugged-quickcss-wrapper .ͼ3 .cm-gutters {
+.theme-dark #replugged-quickcss-wrapper .ͼ3 .cm-gutters {
   background-color: var(--background-tertiary);
 }
 
-#replugged-quickcss-wrapper .cm-activeLineGutter {
+.theme-dark #replugged-quickcss-wrapper .cm-activeLineGutter {
   background-color: var(--background-modifier-selected);
 }
