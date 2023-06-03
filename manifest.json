@@ -1,5 +1,5 @@
 {
-  "id": "dev.fooooooooooooooo.supabase-theme",
+  "id": "dev.fooooooooooooooo.supabase",
   "name": "Supabase theme",
   "description": "Replugged theme based on supabase",
   "author": {
@@ -10,7 +10,7 @@
   "version": "2.0.0",
   "updater": {
     "type": "store",
-    "id": "dev.fooooooooooooooo.supabase-theme"
+    "id": "dev.fooooooooooooooo.supabase"
   },
   "license": "MIT",
   "type": "replugged-theme",
