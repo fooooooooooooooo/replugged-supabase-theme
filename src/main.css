@@ -33,6 +33,9 @@
   --scrollbar-auto-thumb: var(--background-secondary);
   --scrollbar-auto-track: transparent;
 
+  --scrollbar-thin-thumb: var(--background-tertiary);
+  --scrollbar-thin-track: transparent;
+
   --modal-background: var(--background-tertiary);
   --modal-footer-background: var(--background-accent);
   --button-secondary-background: var(--background-modifier-selected);
@@ -101,6 +104,12 @@
 /* WHY is there a random :after element with a linear gradient ?? */
 .theme-dark .innerHeader-1cC3Fp:after {
   background: transparent;
+}
+
+/* DM voice call container buttons */
+
+.theme-dark .callContainer-HtHELf .colorable-3rVGna.primaryDark-2UJt1G {
+  background-color: var(--background-tertiary);
 }
 
 /* quickcss fix */
