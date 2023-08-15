@@ -1,13 +1,18 @@
 {
   "id": "dev.fooooooooooooooo.supabase",
   "name": "Supabase theme",
+  "version": "2.0.0",
   "description": "Replugged theme based on supabase",
   "author": {
     "name": "fooooooooooooooo",
     "discordID": "131283250042634241",
     "github": "fooooooooooooooo"
   },
-  "version": "2.0.0",
+  "source": "https://github.com/fooooooooooooooo/replugged-supabase-theme",
+  "image": [
+    "https://cdn.discordapp.com/attachments/1069883296449835048/1069883296642760724/server.png",
+    "https://cdn.discordapp.com/attachments/1069883296449835048/1069883296919588874/settings.png"
+  ],
   "updater": {
     "type": "store",
     "id": "dev.fooooooooooooooo.supabase"
