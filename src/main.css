@@ -10,7 +10,11 @@
   --colors-gray9: #707070;
   --colors-gray10: #7e7e7e;
   --colors-gray11: #a0a0a0;
+  --colors-gray11-5: #a8a8a8;
   --colors-gray12: #ededed;
+
+  --primary-330: var(--colors-gray11-5);
+  --primary-360: var(--colors-gray12);
 
   --primary-600: var(--colors-gray1);
   --primary-630: var(--colors-gray2);
@@ -37,6 +41,7 @@
   --scrollbar-thin-track: transparent;
 
   --modal-background: var(--background-tertiary);
+  --deprecated-card-bg: var(--background-tertiary);
   --modal-footer-background: var(--background-accent);
   --button-secondary-background: var(--background-modifier-selected);
   --input-background: var(--background-secondary);
@@ -44,26 +49,37 @@
   /* forum channels */
   --home-background: var(--background-primary);
 
+  --channels-default: var(--colors-gray10);
+  --channel-icon: var(--colors-gray10);
+
   /* custom colors */
 
   --dark-bg-bg-color: #7d7d7d;
+  --darker-bg-bg-color: #4b4b4b;
   --dark-bg-text-color: #8d8d8d;
   --dark-bg-bg-color-hover: #a1a1aa;
 
   --green-thing: rgb(59, 165, 92);
+
+  /* gradient in search */
+  --search-popout-option-fade: transparent;
+  --search-popout-option-fade-hover: transparent;
 }
 
 /* patches for things that dont use variables for some unknown reason */
 
-.theme-dark .container-1QtPKm {
+/* checkbox */
+.theme-dark .container__871ba {
   background-color: var(--background-modifier-selected) !important;
 }
 
-.theme-dark .container-1QtPKm.disabled-3_3z1m {
-  background-color: var(--input-background) !important;
+/* checkbox disabled */
+.theme-dark .container__871ba.disabled_eac369 {
+  background-color: var(--background-modifier-selected) !important;
 }
 
-.theme-dark .container-1QtPKm.checked-16gMAN {
+/* checkbox checked */
+.theme-dark .container__871ba.checked__6bdb0 {
   background-color: var(--green-thing) !important;
 }
 
@@ -73,37 +89,23 @@
 
 /* message bar colors */
 
-.theme-dark .channelTextArea-1deLlK {
+.theme-dark .channelTextArea__2e60f {
+  --interactive-normal: var(--darker-bg-bg-color);
+  --interactive-hover: var(--dark-bg-text-color);
+  --interactive-active: var(--dark-bg-text-color);
+}
+
+.theme-dark .autocomplete_df266d {
+  --interactive-normal: var(--colors-gray11);
+  --interactive-active: var(--colors-gray12);
+}
+
+/* channel header colors */
+
+*[aria-label='Channel header'] {
   --interactive-normal: var(--dark-bg-bg-color);
-  --interactive-hover: var(--dark-bg-bg-color-hover);
-  --interactive-active: var(--dark-bg-bg-color-hover);
-}
-
-.theme-dark .emojiButtonNormal-35P0_i > div {
-  filter: brightness(0.6);
-}
-
-.theme-dark .autocomplete-3NRXG8 {
-  --interactive-normal: var(--default-text-color);
-  --interactive-active: var(--default-text-color);
-}
-
-/* Channels & Roles */
-.theme-dark .container-2IKOsH,
-.theme-dark .container-1um7CU,
-.theme-dark .header-3xB4vB,
-.theme-dark .scrollerContainer-y16Rs9,
-.theme-dark .emptyPage-2TGR7j {
-  background-color: var(--background-primary);
-}
-
-.theme-dark .chat-9g_3Xj .profileCard-2gVmvm {
-  background-color: var(--background-secondary);
-}
-
-/* WHY is there a random :after element with a linear gradient ?? */
-.theme-dark .innerHeader-1cC3Fp:after {
-  background: transparent;
+  --interactive-hover: var(--dark-bg-text-color);
+  --interactive-active: var(--dark-bg-text-color);
 }
 
 /* DM voice call container buttons */
@@ -128,4 +130,10 @@
 
 .theme-dark #replugged-quickcss-wrapper .cm-activeLineGutter {
   background-color: var(--background-modifier-selected);
+}
+
+/* report menu hover color fix */
+
+.theme-dark div[role='dialog'] .childButton__832dc:hover {
+  background-color: var(--background-modifier-selected) !important;
 }

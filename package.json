@@ -1,26 +1,25 @@
 {
   "name": "replugged-supabase-theme",
-  "version": "2.0.0",
+  "version": "2.1.0",
+  "author": "fooooooooooooooo",
   "description": "Replugged theme based on supabase",
+  "license": "MIT",
+  "keywords": [],
   "engines": {
-    "node": ">=18.0.0",
+    "node": ">=20.0.0",
     "pnpm": ">=8.0.0"
   },
   "scripts": {
     "build": "replugged build theme",
     "watch": "replugged build theme --watch",
     "bundle": "replugged bundle theme",
+    "release": "replugged release",
     "lint": "prettier ./src --check",
     "lint:fix": "prettier ./src --write"
   },
-  "keywords": [],
-  "author": "fooooooooooooooo",
-  "license": "MIT",
   "devDependencies": {
-    "@parcel/config-default": "^2.10.0",
-    "@parcel/core": "^2.10.0",
-    "@types/node": "^20.8.7",
-    "prettier": "^3.0.3",
-    "replugged": "^4.7.4"
+    "@types/node": "^20.11.0",
+    "prettier": "^3.2.2",
+    "replugged": "^4.7.7"
   }
 }
